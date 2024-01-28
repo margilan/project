@@ -1,42 +1,186 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-image: url(../src/assets/desktop-wallpaper-abstract-black-shapes-pc-and-mac-2560x1440-black.jpg);
+}
+.project-all-container{
+  width: 1440px;
+height: 800px;
+flex-shrink: 0;
+background-size : 100% 100%
+}
+.logo img{
+  width: 107px;
+height: 33px;
+flex-shrink: 0;
+cursor: pointer;
+}
+.header-all{
+  padding-top: 35px;
+  margin-left: 135px;
+  display: flex;
+  gap: 200px;
+}
+ul{
+  list-style-type: none;
+}
+.uls ul li{
+  color: #FFF;
+font-family: "Noto Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+transition: all 0.5s;
+}
+.uls ul li:hover{
+  text-decoration: underline;
+  padding-top: 5px;
+  color:#fff;
+}
+.uls ul{
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.first-button a button{
+  width: 130px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 2px solid #FFF;
+  cursor: pointer;
+  background:none;
+  color: #FFF;
   text-align: center;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: all 0.7s;
+  margin-top: -5px;
+}
+.first-button a button:hover{
+  background:#fff;
+  color:black
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.first-text h1{
+  width: 800px;
+  text-align: center;
+font-family: "Noto Sans";
+font-size: 64px;
+font-style: normal;
+font-weight: 800;
+line-height: 88px; /* 137.5% */
+background: linear-gradient(90deg, #FFE27D 3.13%, #FFB543 31.38%, #61FFD5 74.27%, #3FB5FF 99.14%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+cursor: pointer;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.texts{
+  margin-left: 290px;
+  margin-top: 138px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.three-text h3{
+  width: 800px;
+  color: rgba(255, 255, 255, 0.80);
+text-align: center;
+font-family: "Noto Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 20px;
 }
+.three-text span{
+  color: rgba(255, 255, 255, 0.80);
+font-family: "Noto Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+cursor: pointer;
+}
+.buton a button{
+  width: 200px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 100px;
+background: #FFF;
+cursor: pointer;
+border:none;
+transition: all 0.5s;
+margin-top: 60px;
+margin-left: 300px;
+}
+.buton a button:hover{
+  background:none;
+  color:white;
+  border: 2px solid #FFF;
+  transform: scale(1.2);
+}
+.button-three a button{
+  width: 65.004px;
+height: 65px;
+flex-shrink: 0;
+border-radius:50%;
+border:2px solid #fff;
+font-size: 20px;
+cursor: pointer;
+background: none;
+transition: all 0.5s;
+margin-top: 154px;
+margin-left: 365px;
+}
+.button-three a button:hover{
+background:#fff;
+transform: scale(1.2);
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.first-item a button{
+  width: 80px;
+height: 80px;
+flex-shrink: 0;
+background:none;
+border:2px solid #fff;
+font-size: 30px;
+cursor: pointer;
+transition: all 0.5s;
+border-radius:4px;
 }
-
-.card {
-  padding: 2em;
+.first-item a button:hover{
+  background:white;
+  transform: scale(1.2);
 }
-
-.read-the-docs {
-  color: #888;
+.all-buton{
+  display: flex;
+  align-items: center;
+  gap: 1100px;
+  margin-top: -350px;
+  margin-left: -230px;
+}
+.thre-item a button{
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  background:none;
+  border:2px solid #fff;
+  font-size: 30px;
+  cursor: pointer;
+  padding-top:-16px;
+  transition: all 0.5s;
+  border-radius:4px;
+}
+.thre-item a button:hover{
+  background:white;
+  transform: scale(1.2);
 }

@@ -1,35 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Logo from "../src/assets/Logo.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="project-all-container">
+        <div className="header-all">
+          <div className="logo">
+            <a href="#">
+              <img src={Logo} />
+            </a>
+          </div>
+          <div className="uls">
+            <ul>
+              <li>Home</li>
+              <li>About us</li>
+              <li>How it works</li>
+              <li>Service</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div className="first-button">
+            <a href="#">
+              <button>Login</button>
+            </a>
+          </div>
+        </div>
+        <div className="sections-all">
+          <div className="texts">
+            <div className="first-text">
+              <h1>Manage faster and sell more with big data</h1>
+            </div>
+            <div className="three-text">
+              <h3>Quickly integrate our solution and start processing more sales with <span>Kreed</span>.</h3>
+            </div>
+             <div className="buton">
+              <a href="#"><button>Get Started</button></a>
+            </div>
+            <div className="button-three">
+              <a href="#"><button>👇</button></a>
+            </div>
+            <div className="all-buton">
+            <div className="first-item">
+              <a href="#"><button>👈</button></a>
+            </div>
+            <div className="thre-item">
+              <a href="#"><button>👉</button></a>
+            </div>
+            </div>
+           
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
